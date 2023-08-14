@@ -5,14 +5,15 @@ C# courses made in common by the Global Knowledge's trainees.
 
 This course is based on research and an eight days C# lesson at Global Knowledge in 2023. 
 
-**Useful links:**
+## **Useful links:**
 - [**Philippe's (our teacher) C# course on Miro**](https://miro.com/app/board/uXjVMxGe2Cg=/)
 - [**Microsoft labs** "Programming in C#"](
 https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master)
+- [**Project's Trello**](https://trello.com/b/ondznnzC/cours-c)
 
-<br>
+**Note:** About the trello link: it's a public link that do not allows you to modify the content. (If you want the member link, please check on Discord).
 
-**TABLE OF CONTENTS:**
+## **TABLE OF CONTENTS:**
 
 * [**Visual Studio**](/Courses/1_Visual_Studio/)
     - [Build](/Courses/1_Visual_Studio/build.md)
@@ -44,3 +45,4 @@ https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master)
 * [**Release**](/Courses/Release_Tutorial/)
     - [Semantic versioning](/Courses/Release_Tutorial/semantic_versioning.md)
 
+**Note:** This is a non-exhaustive list of lessons and concepts. You can check all the work currently on-going or to do on the Trello link of that projet, at the [useful links section](#useful-links). 
