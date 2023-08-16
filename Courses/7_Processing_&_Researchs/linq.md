@@ -11,11 +11,11 @@ Linq uses a vocabulary similar to SQL and you'll find many words in common, such
 
 <div style="display: flex;">
     <div style="flex: 45%; padding: 5px;">
-        <img src="../_resources/linq-query-complete-operation.png" alt="Dungeon power" />
+        <img src="resources/linq-query-complete-operation.png" alt="Dungeon power" />
     </div>
     <div style="flex: 45%; padding: 5px;">
         <p>
-        Here is a scheme from Microsoft Learn that explains how Linq query works.
+        Here is a scheme from Microsoft Learn that explains how Linq works.
         <br>
         <br>
         It takes a data source, such as a collection and by using a query made by Linq, you will filter it and only select the datas interesting for you. 
@@ -83,11 +83,23 @@ Linq queries return an `IEnumerable` which is a collection type of datas based o
 
 <br>
 
+**Why should you use the `var` keyword ?**
 When querying a database or entities, its safer to write the expected type as `var` because it can greatly vary depending of you Linq query.
 ```csharp
 var whiteCats = 
     from Cat cat in Cats
-    where cat.furColor = "white"
+    where cat.furColor == "white"
     select cat;
 ```
-Why haven't we wrote `IEnumerable<Cat> whiteCats` ?
+Why didn't we write `IEnumerable<Cat> whiteCats` ? In the above case, it's precisely what we get so we could have done it. But look at that second example:
+```csharp
+var animalNamesFromThere =
+    from Cat cat in Cats
+    where cat.City == "Here" || cat.City == "There"
+    select new { Name = cat.name, City = cat.City };
+```
+What are you supposed to receive ? Not a `Cat` neither a string. That's a new object that you cannot describe because it doesn't exist anywhere. So `var` became the only option.
+
+### Iterate on the result
+
+### Advanced Linq queries
