@@ -46,14 +46,48 @@ It can also by used on **other types of datas** by implementing the interface `I
 
 ## **How to use it ?**
 
+### Define a collection of objects.
 First, we need datas on which we can execute our query, let's define a collection of objects.
 <br>
 **What is a collection ?** For instance, it can be a list, an array or an Enumerable/IEnumerable.
 
 ```csharp
-int[] numbers = new int[5] {15, 16, 2, 55, -15};
+int[] numbers = new int[6] {15, -76, 16, 2, 55, -15};
 
 //You can also use custom objects, it's mainly used with entities (from Entity Framework)
 List<Cat> cats = new List<Cat>();
 ```
 
+
+### Execute a Linq Query
+Then, it is already possible to write our query. 
+<br> 
+Before anything, you must know that **the return type of a Linq query can change or be ambiguous**, depending of the query you write and the datas you works with.
+
+Usually, if you work with simple types (`int`, `string`, etc.) you can easily determine what you'll return. It can be the same with complexe objects or entities if you are certain about what you want. 
+
+Here is a basic example with a simple data types:
+```csharp
+IEnumerable<int> positiveNumbers = 
+    from int num in numbers
+    where num >= 0
+    select num;
+// Result : positiveNumbers 15, 16, 2, 55
+```
+The `from` keyword is the line where you indicate **from which collection** you want to filter datas. <br>
+The `where` keyword is the **filter condition**. Only objects or variables that respect it will be taken. <br>
+The `select` keyword **indicate the format** of the datas and which datas you'll return.
+
+Linq queries return an `IEnumerable` which is a collection type of datas based on the data returned by the select. It's kinda the same as a list be you can't use the same methods. 
+<br>What's good with IEnumerable is the fact that you can you call advanced methods such as the ["Criteria Linq"](criteria_linq.md) ones (ex: `Enumerable.Where()` or `Enumerable.Select()`).
+
+<br>
+
+When querying a database or entities, its safer to write the expected type as `var` because it can greatly vary depending of you Linq query.
+```csharp
+var whiteCats = 
+    from Cat cat in Cats
+    where cat.furColor = "white"
+    select cat;
+```
+Why haven't we wrote `IEnumerable<Cat> whiteCats` ?
