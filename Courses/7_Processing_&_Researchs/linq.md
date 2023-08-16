@@ -3,6 +3,7 @@
 
 
 ## **What is LINQ ?**
+
 **Linq** for **L**anguage **In**tegrated **Q**uery. As its name says, that's an integrated language that helps doing requests on
 collections of data.
 
@@ -24,9 +25,35 @@ Linq uses a vocabulary similar to SQL and you'll find many words in common, such
     </div>
 </div>
 
+
+
+
+
 ## **Where to use it ?**
+
+**Linq** is used to query many types of content :
+* **Object collections** => Linq to Objects
+* **ADO.NET DataSet** => Linq to DataSet
+* **XML Documents** => Linq to XML
+* **Entity Framework** => Linq to Entities
+* **SQL Databases** => Linq to SQL
+
+It can also by used on **other types of datas** by implementing the interface `IQueryAble`.
+
 
 
 
 
 ## **How to use it ?**
+
+First, we need datas on which we can execute our query, let's define a collection of objects.
+<br>
+**What is a collection ?** For instance, it can be a list, an array or an Enumerable/IEnumerable.
+
+```csharp
+int[] numbers = new int[5] {15, 16, 2, 55, -15};
+
+//You can also use custom objects, it's mainly used with entities (from Entity Framework)
+List<Cat> cats = new List<Cat>();
+```
+
