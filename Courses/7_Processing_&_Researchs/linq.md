@@ -1,5 +1,13 @@
 # <span style="color: green"><u>**LINQ**</u></span>
 
+* [**What is LINQ ?**](#what-is-linq)
+* [**Where to use it ?**](#where-to-use-it)
+* [**How to use it ?**](#how-to-use-it)
+    - [Define a collection](#define-a-collection-of-objects)
+    - [Execute a Linq query](#execute-a-linq-query)
+    - [Iterate on the result](#iterate-on-the-result)
+    - [Useful tips](#useful-linq-tips)
+
 
 
 ## **What is LINQ ?**
@@ -45,6 +53,13 @@ It can also by used on **other types of datas** by implementing the interface `I
 
 
 ## **How to use it ?**
+
+Before anything, you need to import some assemblies in order to use Linq.
+<br>
+You can do so by writing:
+`using System.Linq;`
+<br>
+Additionnaly, it could require `using System.Collections.Generic` depending of the datas that you want to work with.
 
 ### Define a collection of objects.
 First, we need datas on which we can execute our query, let's define a collection of objects.
@@ -98,8 +113,75 @@ var animalNamesFromThere =
     where cat.City == "Here" || cat.City == "There"
     select new { Name = cat.name, City = cat.City };
 ```
-What are you supposed to receive ? Not a `Cat` neither a string. That's a new object that you cannot describe because it doesn't exist anywhere. So `var` became the only option.
+What are you supposed to receive ? Not a `Cat` neither a `string`. That's a new object that you cannot describe because it doesn't exist anywhere. So `var` become the only option.
 
 ### Iterate on the result
+To iterate on a Linq query result, the most used technique is to write a `foreach` loop. <br>
+It allows to iterate on every objects returned by the query, regardless of the collection size. It also works fine with `IEnumerable`. 
 
-### Advanced Linq queries
+```csharp
+foreach(Cat whiteCat in whiteCats)
+{
+    Console.Writeline(whiteCat.Name + " is a... white cat!")
+}
+```
+
+### Useful Linq tips
+Let's take a look at a few more interesting requests made with Linq.
+
+You can write many words in a Linq request, take a look at the [Microsoft Learn's doc](https://learn.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/query-keywords).
+
+**Save only the first match**
+```csharp
+Cat felix = 
+    (from Cat cat in cats
+    where cat.Name == "Félix"
+    select cat).First(); // You can also use FirstOrDefault()
+```
+
+**Enumerable to list**
+```csharp
+List<Cat> gingerCats = 
+    (from Cat cat in cats
+    where cat.Name == "Félix"
+    select cat).ToList();
+```
+
+**Join query**
+```csharp
+var innerJoinQuery =
+    from category in categories
+    join prod in products on category.ID equals prod.CategoryID
+    select new { ProductName = prod.Name, Category = category.Name };
+```
+
+**Order by**
+```csharp
+// Query for ascending sort.
+IEnumerable<string> sortAscendingQuery =
+    from fruit in fruits
+    orderby fruit //"ascending" is default
+    select fruit;
+
+// Query for descending sort.
+IEnumerable<string> sortDescendingQuery =
+    from w in fruits
+    orderby w descending
+    select w;
+```
+
+**Critera LINQ**
+
+Linq can also be used without writing a complete query. There are many integrated methods that allows to simplify our requets. For instance :
+```csharp
+// Classic
+var gingerCats = 
+    from Cat cat in cats
+    where cat.Name == "Félix"
+    select cat;
+
+// "Criteria" LINQ
+var gingerCats = cats.Where(cat => cat.Name == "Félix");
+```
+
+You can read a lesson about some "Criteria" Linq methods [**here**](criteria_linq.md).
