@@ -37,3 +37,15 @@ Permet de répartir les différentes ressources sur deux clouds selon ce que nou
 - **Communautaire** ⇒ *Inscription sur critères spécifiques.*
 
 Réservé à des communautés spécifiques, ex : un cloud réservé aux allemands ou aux chinois.
+
+
+
+## **Configurer Azure**
+Installer **Azure Stack Hub** afin de gérer du cloud local, privé voire hybride. <br>
+Sinon Azure Stack HCI et Edge servent à compléter l’offre Azure Stack locale.
+
+### Vocabulaire
+Une `ressource Azure` est une instance d’un service. (Ex: créer une VM va instancier un service VM) 
+
+Les `groupes de ressources` vont permettre de regrouper des ressources afin de répondre à un besoin donné. (ex : pour un site web : un app service, une bdd, un emplacement de stockage, etc.). Il sera aussi possible de gérer plus facilement les autorisations puisqu’il est possible d’en appliquer à un groupe de ressource.
+
