@@ -66,3 +66,10 @@ Lors de la création d’abonnement, il faut préciser qui a le droit d’y acc�
 
 Afin d’**ajouter un utilisateur à un abonnement**, il faut l’ajouter ou le créer (Users ⇒ Create user) et il sera ensuite possible de lui accorder des droits.
 
+### Utilisateurs 
+**Azure Active Directory** afin de voir les utilisateurs. <br> Afin de se connecter à Azure, c’est AAD qui va vérifier les login et mdp sur la majeure partie des applications. Le logiciel AAD Connect permet d’enregistrer et récupérer des utilisateurs locaux et de les exporter sur le cloud et ils seront synchronisés. 
+
+**Il faut un compte Azure AD pour travailler en local et un autre à distance** (ce ne sont pas les mêmes comptes). Il est alors possible de faire en sorte que certaines personnes puissent travailler uniquement en local ou à distance. En **activant la synchronisation**, on peut faire en sorte que le compte distant et local utilisent les mêmes login et mdp.
+
+### App registrations 
+Permet de créer une identité à une application, cela permet de l’assigner sur d’autres ressources Azure et lui donner des droits, notamment à une base de données permettant une connexion automatique.
