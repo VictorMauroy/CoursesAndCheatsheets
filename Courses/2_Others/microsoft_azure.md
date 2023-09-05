@@ -45,7 +45,24 @@ Installer **Azure Stack Hub** afin de gérer du cloud local, privé voire hybrid
 Sinon Azure Stack HCI et Edge servent à compléter l’offre Azure Stack locale.
 
 ### Vocabulaire
-Une `ressource Azure` est une instance d’un service. (Ex: créer une VM va instancier un service VM) 
+Une **ressource Azure** est une instance d’un service. (Ex: créer une VM va instancier un service VM) 
 
-Les `groupes de ressources` vont permettre de regrouper des ressources afin de répondre à un besoin donné. (ex : pour un site web : un app service, une bdd, un emplacement de stockage, etc.). Il sera aussi possible de gérer plus facilement les autorisations puisqu’il est possible d’en appliquer à un groupe de ressource.
+Les **groupes de ressources** vont permettre de regrouper des ressources afin de répondre à un besoin donné. (ex : pour un site web : un app service, une bdd, un emplacement de stockage, etc.). Il sera aussi possible de gérer plus facilement les autorisations puisqu’il est possible d’en appliquer à un groupe de ressource.
+
+### Choisir sa région
+Selon la région choisie (US, EU, etc.) : 
+- Les lois du territoire choisi seront appliquées
+- Les prix varient (ex : coût de l’électricité)
+- Certains services pourraient ne pas être disponibles
+- Selon le datacenter choisi, il pourrait ne pas y avoir assez de stockage et nos données pourraient être réparties entre deux datacenters (pas super)
+
+Il est possible de choisir sa zone dans une région lors de la création d’une VM. Pour de la haute disponibilité, il serait possible de créer plusieurs VM, toutes dans des régions différentes (prépare aux scénarios de panne).
+
+### Abonnement 
+La sélection de l’abonnement lors de l’utilisation d’un service va **indiquer sur quel budget il faudra prélever** de l’argent. Par exemple, si on veut que certaines ressources soient dédiées au marketing et d’autres aux formations. Ou quelle entreprise chez laquelle nous travaillons sera prélevée pour ce service.
+
+Les **Management Group** permettent de regrouper des abonnements afin de plus facilement les retrouver/hiérarchiser.
+Lors de la création d’abonnement, il faut préciser qui a le droit d’y accéder. Les Management Group permettent de facilement gérer cette option car on peut appliquer les droits ou assigner des utilisateurs à ces groupes.
+
+Afin d’**ajouter un utilisateur à un abonnement**, il faut l’ajouter ou le créer (Users ⇒ Create user) et il sera ensuite possible de lui accorder des droits.
 
