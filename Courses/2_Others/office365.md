@@ -85,3 +85,10 @@ L’**environnement Developer** est réservé à un unique développeur et perso
 
 Globalement, **nous utilisons Power Automate lorsque nous avons besoin d’automatiser des actions.**
 Lors de la définition d’un flow, il est possible de relier des nodes et ainsi d’appeler de nombreux services. Notamment le Business Process où nous avons chercher des données dans la BDD du Dataverse puis avons envoyé un mail ou une requête sur Teams afin d’attendre une réponse acceptée ou refusée.
+
+### Dataverse
+**Le dataverse est une base de données associée à un environnement particulier.**
+
+Les **Data Models** sont des modèles que nous pouvons utiliser afin de commencer avec une base de tables lorsque nous créons une base de données. En se basant sur des modèles fréquemment utilisés.
+
+Dans le dataverse, il est possible de créer nos propres tables, de renseigner de nombreux paramètres personnalisés (y compris les relations et les propriétés des champs/colonnes). Il est ensuite possible de rapidement créer des formulaires et des vues grâce au Dataverse.
