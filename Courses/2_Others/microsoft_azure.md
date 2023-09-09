@@ -2,6 +2,17 @@
 
 Note: Made in french, must be translated...!
 
+## Table des matières
+* [**Description**](#description)
+    - [Types de services](#azure-fournit-différents-services)
+    - [Types de cloud](#azure-fournit-trois-types-de-cloud)
+* [**Configurer Azure**](#configurer-azure)
+    - [Vocabulaire](#vocabulaire)
+    - [Choisir sa région](#choisir-sa-région)
+    - [Abonnement](#abonnement)
+    - [Utilisateurs](#utilisateurs)
+    - [App registration](#app-registrations)
+
 ## **Description**
 "Azure" est une plateforme de cloud computing fournie par Microsoft. Il offre un large éventail de services et de solutions pour la gestion, le stockage, le déploiement et la gestion d'applications et de services sur le cloud. (ChatGPT)
 
