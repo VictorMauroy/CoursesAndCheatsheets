@@ -48,7 +48,7 @@ Data Viz(Visualization) & Data Prep(Preparation)
 <br> Créer des sites web grand public
 
 
-## Les environnements
+## **Les environnements**
 **Utilité :** Séparer la production du développement afin d’avoir des sources de données et des applications différentes (notamment si les apps ne sont pas testées ou validées).
 
 **Les solutions** permettent de transporter les développements d’un environnement à un autre.
@@ -63,3 +63,25 @@ L’**environnement Developer** est réservé à un unique développeur et perso
 **Sandbox** est un environnement qu’il est possible de copier ou réinitialiser.
 
 **Note :** Il est préférable de toujours créer des objets dans une solution plutôt que dans un environnement. Cela permet notamment de définir correctement le publisher.
+
+
+
+## **Créer une application**
+1) Afin de créer une application, **commencez par passer en environnement développeur**. 
+
+2) **Créez une solution** (un conteneur d’objets/d’applications) et **ajoutez un publisher** (concepteur de l’app; indique quelle entité est à l’origine de la publication du contenu : un dev ou une entreprise)
+
+3) Une fois la solution créée, nous pouvons commencer à **créer des tables** (en restant dans la solution) si nous avons besoin d’une BDD. Il est possible d’utiliser des data models pour démarrer rapidement.
+
+**Formulaire (form office365) :** Permet de visualiser voire d’interagir avec un enregistrement unique d’une table.
+
+**Vue (view office365) :** Permet de visualiser, sur une même page, plusieurs enregistrements qui sont présents sur une même table.
+
+**Business rule :** permet d’ajouter des contraintes / des règles de gestion. Contraintes qui vont être validées avant qu’une donnée ne soit enregistrée dans la bdd.
+
+**Business process :** Réaliser des workflows; Mettre en place des processus que l’entreprise devra suivre.
+
+**SendGrid :** Service permettant d’associer des boîtes mails et pouvant envoyer des mails ou SMS lorsqu’il est appelé (notamment par des flows (Business flow) de Power Automate).
+
+Globalement, **nous utilisons Power Automate lorsque nous avons besoin d’automatiser des actions.**
+Lors de la définition d’un flow, il est possible de relier des nodes et ainsi d’appeler de nombreux services. Notamment le Business Process où nous avons chercher des données dans la BDD du Dataverse puis avons envoyé un mail ou une requête sur Teams afin d’attendre une réponse acceptée ou refusée.
