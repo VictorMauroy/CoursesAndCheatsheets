@@ -46,3 +46,20 @@ Data Viz(Visualization) & Data Prep(Preparation)
 
 **Power Pages :**
 <br> Créer des sites web grand public
+
+
+## Les environnements
+**Utilité :** Séparer la production du développement afin d’avoir des sources de données et des applications différentes (notamment si les apps ne sont pas testées ou validées).
+
+**Les solutions** permettent de transporter les développements d’un environnement à un autre.
+
+Par défaut, nous travaillons dans l’environnement Production.
+Lorsque nous développons une application, il vaut mieux travailler avec différents environnements, notamment un environnement “de développement” puis passer à celui de production.
+
+Pour **créer un nouvel environnement** : Aller au Power Platform admin center puis sur Environnements ⇒ New.
+
+L’**environnement Developer** est réservé à un unique développeur et personne ne peut y être invité. <br>
+**Production** est collaboratif, il est possible d’en créer plusieurs afin d’avoir de donner l’accès à différents groupes de personnes. <br>
+**Sandbox** est un environnement qu’il est possible de copier ou réinitialiser.
+
+**Note :** Il est préférable de toujours créer des objets dans une solution plutôt que dans un environnement. Cela permet notamment de définir correctement le publisher.
