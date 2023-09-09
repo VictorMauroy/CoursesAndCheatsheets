@@ -92,3 +92,14 @@ Lors de la définition d’un flow, il est possible de relier des nodes et ainsi
 Les **Data Models** sont des modèles que nous pouvons utiliser afin de commencer avec une base de tables lorsque nous créons une base de données. En se basant sur des modèles fréquemment utilisés.
 
 Dans le dataverse, il est possible de créer nos propres tables, de renseigner de nombreux paramètres personnalisés (y compris les relations et les propriétés des champs/colonnes). Il est ensuite possible de rapidement créer des formulaires et des vues grâce au Dataverse.
+
+## **PowerBI**
+**PowerBI étant essentiellement utilisé pour écrire et lire des rapports.** Il est possible d’utiliser une licence gratuite mais nous sommes restreint à notre propre travail et il est impossible de partager nos rapports ou lire ceux d’autres personnes.
+
+Ces rapports peuvent notamment inclure **de nombreux types de graphiques**.
+
+N’est pas un outil mais plutôt une suite d'outils. **Les principaux outils** sont : 
+- **PowerBI Desktop** (Conception de rapports)	
+- **PowerBI Service** (Héberger les rapports sur le cloud)
+- **PowerBI Report Server** (Héberger les rapports sur des serveurs privés / au sein de notre entreprise)
+- **PowerBI Mobile** 
