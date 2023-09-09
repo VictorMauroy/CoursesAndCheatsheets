@@ -1,5 +1,12 @@
 # <span style="color: green"><u>**Office/Microsoft 365 - Power Platform**</u></span>
 
+## Table des matières
+* [**Licences**](#licence)
+* [**Power Platform**](#introduction-à-power-platform)
+* [**Les environnements**](#les-environnements)
+* [**Créer une application**](#créer-une-application)
+* [**Power BI**](#powerbi)
+
 ## **Licence**
 Afin de travailler en tant que développeur sur office 365, il faut le droit d’acheter sur le compte (rang admin). La licence par défaut étant une license famille pour le grand public.
 
