@@ -41,3 +41,15 @@ Le [**trunk-based development**](https://trunkbaseddevelopment.com/) est la meil
 
 **Containers** : Utilisation de containers, permet de mettre en place l'infrastructure microservices. Améliorer la qualité finale. Consomme peu de ressources comparé aux machines virtuelles. <br />
 **Kubernetes :** l'un des orchestrateurs les plus utilisés; Il offre le pus grand nombre de services.
+
+
+
+
+## Différence structure horizontale et verticale
+<img src="resources/devops structure.PNG" alt="devops structure" />
+
+
+
+
+## Composition Azure Devops
+<img src="resources/devops composition.PNG" alt="devops composition img" />
