@@ -53,3 +53,21 @@ Le [**trunk-based development**](https://trunkbaseddevelopment.com/) est la meil
 
 ## Composition Azure Devops
 <img src="resources/devops composition.PNG" alt="devops composition img" />
+
+
+
+
+## Pipeline et intégration continue
+
+<img src="resources/azure pipeline.PNG" alt="azure pipeline img" />
+
+L'intégration ce sont les tâches qui permettent de préparer des artéfacts à la release.
+
+### La pipeline classique
+La pipeline classique aussi nommée Visual Designer Pipeline. Elle n'est plus à utiliser.
+<img src="resources/visual designer pipeline.PNG" alt="classic pipeline img" />
+
+### La YAML pipeline
+Réalisé avec un assistant capable de générer du code.
+<img src="resources/YAML pipeline.PNG" alt="yaml pipeline img" />
+
