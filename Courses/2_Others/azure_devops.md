@@ -95,7 +95,7 @@ Les **Feature toggles** sont des changements apportés à une application où vo
 ## Securité
 
 ### Durant le **plan de développement**
-- **Modéliser les menaces**: Le choix des frameworks et des applications que nous allons utiliser. Réfléchir au sujet des possibles menaces que chaque choix peut impliquer.
+- **Modéliser les menaces** : Le choix des frameworks et des applications que nous allons utiliser. Réfléchir au sujet des possibles menaces que chaque choix peut impliquer.
 - **IDE plugins**. Il est possible d'ajouter de nombreux plug-ins à notre IDE, notamment pour faire de la review + augmenter la sécurité.
 - **Code review**
 
@@ -106,3 +106,16 @@ Les **Feature toggles** sont des changements apportés à une application où vo
 
 ### Lors du **Build** de l'application
 - **Code IAC** (Infrastructure as Code): Vérifier si l'infrastructure est sécurisée. Cela peut impliquer de sauvegarder correctement les clés d'accès et/ou les identifiants, par exemple.
+
+### Passage à la production
+- **Smoke tests** : Faire des tests sur des aspects critiques de l'application. (ex: main page, login). Evaluer la sécurité de ces aspects. Ils se font en amont. Ils sont primordiaux et s'ils ne passent pas la validation, toute l'app est en danger.
+- **Pen tests**. Notamment consulter **OWASP** pour savoir les risques et attaques les plus répandus. OWASP fournit également des outils pour réaliser des Pen tests. Pen tests: tests d'intrusion.
+- **Tests de charge** : Simuler des charges pour évaluer la résilience et scalabilité de notre application.
+
+### "Operate"
+- **"Continuous monitoring"** : Evaluation des données afin de détecter d'éventuelles menaces. Mettre en place du machine learning sur les logs, les messages et le trafic réseau. Mettre en place des alertes. ==> Automatiser des réponses sur des événements à risque.
+- **"Threat intelligence"** : **Siem** (Security Information and Event Management) associé à un SOAR (souvent inclus dans le SIEM). Comprendre et identifier les sources des attaques par de l'analyse. Dans Azure, le service s'occupant de cette partie s'appelle "**Microsoft Azure Sentinel**".
+
+### Autres tests
+<img src="resources/Agile-Testing-Quadrants_fr.png" alt="agile quadrant tests img" />
+
