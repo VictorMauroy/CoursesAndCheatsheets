@@ -92,3 +92,17 @@ Dev => test => staging => production
 Les **Feature toggles** sont des changements apportés à une application où vont coexister la nouvelle version d'une feature et une ancienne. La feature toggle représente cette nouvelle version de la feature. L'ancienne version reste un certain temps jusqu'à ce que l'utilisateur se soit adapté à la nouvelle.
 <img src="resources/feature toggle.PNG" alt="feature toggle img" />
 
+## Securité
+
+### Durant le **plan de développement**
+- **Modéliser les menaces**: Le choix des frameworks et des applications que nous allons utiliser. Réfléchir au sujet des possibles menaces que chaque choix peut impliquer.
+- **IDE plugins**. Il est possible d'ajouter de nombreux plug-ins à notre IDE, notamment pour faire de la review + augmenter la sécurité.
+- **Code review**
+
+### Lors de la réalisation ou l'envoi d'un **commit**
+- **Git hooks** : Les hooks Git sont des scripts qui s'exécutent automatiquement dès qu'un événement particulier se produit dans un dépôt Git. Ils vous permettent de personnaliser le comportement interne de Git et de déclencher des actions personnalisables à des points clés dans le cycle de vie du développement. (Atlassian)
+- **Pull Request policy** : Définit des règles pour l'acceptation de pull-requests.
+- **Tests SAST** (Static Application Security Testing): Ex:  SonarCloud or *Membolt?*.
+
+### Lors du **Build** de l'application
+- **Code IAC** (Infrastructure as Code): Vérifier si l'infrastructure est sécurisée. Cela peut impliquer de sauvegarder correctement les clés d'accès et/ou les identifiants, par exemple.
