@@ -102,7 +102,7 @@ Les **Feature toggles** sont des changements apportés à une application où vo
 ### Lors de la réalisation ou l'envoi d'un **commit**
 - **Git hooks** : Les hooks Git sont des scripts qui s'exécutent automatiquement dès qu'un événement particulier se produit dans un dépôt Git. Ils vous permettent de personnaliser le comportement interne de Git et de déclencher des actions personnalisables à des points clés dans le cycle de vie du développement. (Atlassian)
 - **Pull Request policy** : Définit des règles pour l'acceptation de pull-requests.
-- **Tests SAST** (Static Application Security Testing): Ex:  SonarCloud or *Membolt?*.
+- **Tests SAST** (Static Application Security Testing): Ex:  SonarCloud ou Mend Bolt.
 
 ### Lors du **Build** de l'application
 - **Code IAC** (Infrastructure as Code): Vérifier si l'infrastructure est sécurisée. Cela peut impliquer de sauvegarder correctement les clés d'accès et/ou les identifiants, par exemple.
@@ -119,3 +119,7 @@ Les **Feature toggles** sont des changements apportés à une application où vo
 ### Autres tests
 <img src="resources/Agile-Testing-Quadrants_fr.png" alt="agile quadrant tests img" />
 
+<br />
+
+**Schéma concernant la responsabilité en fonction de la solution de stockage cloud choisie.**
+<img src="resources/shared responsibility.PNG" alt="shared responsibility scheme" />
