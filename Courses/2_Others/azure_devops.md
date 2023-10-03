@@ -71,3 +71,24 @@ La pipeline classique aussi nommée Visual Designer Pipeline. Elle n'est plus à
 Réalisé avec un assistant capable de générer du code.
 <img src="resources/YAML pipeline.PNG" alt="yaml pipeline img" />
 
+## Deployment patterns
+
+### Blue green deployment
+Blue green deployment is an application release model that gradually transfers user traffic from a previous version of an app or microservice to a nearly identical new release—both of which are running in production. (Redhat)
+<img src="resources/blue green.PNG" alt="blue green img" />
+
+### Others deployment patterns
+- **Canary releases** : Le canary release est un pattern qui permet de faire tester les dernières modifications réalisées (appelée version N+1) à une tranche de population restreinte avant de réaliser un déploiement général de cette version. (MyAgilePattern)
+
+- **A/B testing** : Faire coexister plusieurs versions d'une même feature. Permet de comparer deux versions avec des metrics afin d'établir des différences et des valeurs ajoutées.
+
+- **Dark launching** : Déployer de manière masquée/cachée une fonctionnalité. 
+
+<br />
+
+**Schéma de déploiement classique :** <br />
+Dev => test => staging => production
+
+Les **Feature toggles** sont des changements apportés à une application où vont coexister la nouvelle version d'une feature et une ancienne. La feature toggle représente cette nouvelle version de la feature. L'ancienne version reste un certain temps jusqu'à ce que l'utilisateur se soit adapté à la nouvelle.
+<img src="resources/feature toggle.PNG" alt="feature toggle img" />
+
