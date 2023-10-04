@@ -35,7 +35,7 @@ Lors d'un projet agile, le rôle de chef de projet est décomposé en deux sous-
 - **Product Owner** : le propriétaire du produit. S'occuper du besoin.
 - **Scrum Master** : aussi appelé Process Owner. S'occuper du processus.
 
-Les développeurs ne sont gérés par aucun "chef". Il n'y a pas de chef en projet agile, à part un "chef produit" et un "chef process".
+Les **développeurs** (troisième rôle) ne sont gérés par aucun "chef". Il n'y a pas de chef en projet agile, à part un "chef produit" et un "chef process". Les développeurs peuvent être jusqu'à 10. Développeur est un rôle qui comprend les concepteurs, les devs, les architectes, les équipes, etc. 
 
 ### Feedback
 Lors d'un projet agile, l'un des points les plus importants est de briser l'effet "tunnel". On doit **chercher à obtenir des retours fréquemment**, il faut **régulièrement communiquer afin de s'assurer du bon déroulement du projet**. Communiquer de manière trop espacée ou uniquement à la fin du projet augmente considérablement ses chances d'échecs.
@@ -75,3 +75,25 @@ Verouiller le scope : Uniquement en management classique, après le cahier des c
 <img src="resources/4_valeurs_agile.PNG" alt="4 valeurs Agile scheme"/>
 En managment de projet classique, nous utilisons les éléments en rouge. <br />
 En approche Agile, les 8 éléments sont à prendre en compte.
+
+### Les 12 principes Agile
+
+<img src="resources/12_principles_Agile.PNG" alt="12 Agile principle scheme" />
+
+Celui-ci est également composé de 3 "P":
+- **People** : Personnes motivées et communication efficace en face à face.
+- **Product** : Livrer une app fonctionnelle + cela est la meilleure façon de mesurer.
+- **Process** : Vérifier l'excellence des pratiques et réflexion en équipe.
+
+Sur le 10è principe (Simplicité) : cela inclut d'éviter le gaspillage et la **NVA** (Non Valeur Ajoutée). <br />
+Exemple intéressant avec le Japon et les trois principes : Muri, Mura et Muda. Que l'on peut aussi appeler le **principe d'amélioration continu**.
+
+## Scrum
+Scrum (mêlée) est un **framework** qui se base sur l'agilité. Il **ajoute un cadre de travail à l'approche Agile**.
+
+Notion de **Timebox** : Chaque tâche possède son propre temps assigné et il n'est pas possible de dépasser cette limite.
+
+**Les quatre types de réunion lors d'un sprint** :
+- **Réunion d'initialisation** : le sprint planning
+- **Daily Scrum** (ou Stand-up meeting): réunion quotidienne, durée max : 15min. Dev uniquement. Le Scrum Master peut y assister mais il ne doit pas participer (sauf pour faire respecter le time box).
+-  
