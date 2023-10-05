@@ -24,6 +24,8 @@ L'agilité est très mauvaise lors de projets précis, tout comme elle est excel
 
 L'**agilité est une approche**, une culture voire un état d'esprit.
 
+Permet d'éviter l'effet papillon (un petit problème peut en cacher un bien plus grand), l'effet boule de neige ainsi que l'effet tunnel.
+
 ### Quelles sont les causes "racines" d'un échec ?
 - **Besoin (56%) alias le "Quoi ?"** : Mauvaise définition du besoin, mauvaise compréhension voire écriture du besoin. Cahier des charges mal écrit.
 - **Process (27%) Comment ?**
@@ -50,7 +52,7 @@ Il faut définir un objectif clair, on procède par sprint plutôt que par phase
 Phases : Analyse => Conception => Dev => Test+Recettage <br />
 Sprint : sprint 1 => sprint 2 => sprint 3
 
-La **durée d'un sprint** est d'une à quatre semaines. La durée du sprint varie en fonction du projet et de l'objectif.
+La **durée d'un sprint** est d'une à quatre semaines. La durée du sprint varie en fonction du projet et de l'objectif. Une fois la durée d'un sprint définie, elle reste la même pour tous les autres sprints.
 
 ### Les facteurs de qualité
 
@@ -66,7 +68,7 @@ Ces facteurs fonctionnent en équilibre, en affecter un va affecter les autres. 
 ### Quand utiliser Agile ?
 **Management classique :** Quand le projet est clair et bien défini.
 
-**Agile :** Quand le projet est complexe et changeant (parasites, facteurs environnementaux).
+**Agile :** Quand le **projet est complexe et changeant** (parasites, facteurs environnementaux).
 
 Verouiller le scope : Uniquement en management classique, après le cahier des charges. En projet informatique, il faut nécessairement utiliser une approche agile puisque le résultat est très variable et de nouvelles requêtes client apparaissent fréquemment.
 
@@ -96,4 +98,34 @@ Notion de **Timebox** : Chaque tâche possède son propre temps assigné et il n
 **Les quatre types de réunion lors d'un sprint** :
 - **Réunion d'initialisation** : le sprint planning
 - **Daily Scrum** (ou Stand-up meeting): réunion quotidienne, durée max : 15min. Dev uniquement. Le Scrum Master peut y assister mais il ne doit pas participer (sauf pour faire respecter le time box).
--  
+- 
+
+Scrum est un process empirique, il se base sur l'expérience.
+
+### Roue de Deming
+Lrincipe de l'amélioration continue / PDCA est essentiel en Agile :
+<img src="resources/PDCA.jpg" alt="PDCA scheme" />
+
+### Valeur et priorité
+**Qu'est-ce que la valeur ?** <br />
+Une valeur importante va être le désir du client, les features qu'il souhaite en priorité. Il peut vouloir quelque chose d'assez vague sauf sur certains points. Réaliser ces fameux points rapidement augmentera beaucoup la valeur et l'intérêt du produit en développement à ses yeux.
+
+**Par quoi commencer ?** <br />
+Entre le désir majeur du client et notre priorité en tant que technicien, la priorité doit être du côté du client. Surtout si cela ne nous impacte pas.
+
+En début de projet, le Product Owner va arriver avec une liste des besoins. Celle-ci doit être priorisée, notamment car ces besoins auront beaucoup de valeur pour le client. Ces besoins sont rédigés à travers un **Product Backlog**.
+
+### Product Backlog
+Première étape d'un projet : **Rédiger et prioriser le Product Backlog** (équivalent d'un cahier des charges) <br />
+Le product backlog est constitué de **Product Backlog Items** (PBI).
+
+**Note :** À la différence d'un cahier des charges, le Product Backlog doit être capable d'évoluer au cours du projet. Notamment afin de suivre des "User Story" évolutives.
+
+Le Product Owner peut en venir à modifier le PB, selon des retours avec le client il peut modifier la priorité ou ajouter des détails. Ces actions sont appelées **Product Backlog Refine** ou **Grooming**.
+
+Outils pour **réaliser un PB** : possible d'utiliser **Trello** pour créer des items et résumer l'ensemble des PBI. On peut aussi inclure le **Sprint Backlog** grâce au système de tâches délimitées dans le temps et d'assignation d'utilisateurs.
+
+### Sprint Backlog
+Un exemple classique de Sprint Backlog pourrait être un tableau Kanban : **Décomposer les tâches d'un ou plusieurs PBI en plusieurs statuts de complétion** (ex: TO-DO, On-going and Done).
+
+Des PBI sont choisis en fonction de leur priorité et durée, ils sont ensuite décomposés en tâches. Les PBI à travailler sur la durée du sprint sont déterminés par les développeurs et les tâches sont également définies par eux.
