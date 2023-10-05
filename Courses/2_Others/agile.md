@@ -160,10 +160,19 @@ Des PBI sont choisis en fonction de leur priorité et durée, ils sont ensuite d
 **5 Critères de l'équipe :** Auto-organisés, multidisciplinaire, pas de titres, pas de sous-équipes et maximum 10.
 
 
+### Acceptance Criteria
+Inclus dans le Product Backlog Item, les critères d'acceptation doivent être spécifiés et respectés. Ce sont des détails primordiaux à la réalisation de la tâche.
 
+### Definition of Done
+Ce document fait partie du process, ce sont aux développeurs de définir ce qu'ils vont mettre dedans.
 
+ Comme le nom l'indique, ce document a pour but d'indiquer les critères et les tâches à réaliser afin de pouvoir définir un élément comme terminé. Que ce soit un PBI ou une tâche.
 
+### Burn Down Chart
 
+Avec la Burn Down Chart, on peut remarquer l'évolution de la complétion des PBI. La courbe n'est pas en pente puisqu'on regarde uniquement lorsque l'item est DONE. S'il n'est pas Done, alors on continue.
+<img src="resources/Burn Down Chart.PNG" alt="Burn Down Chart scheme" />
 
+Si le PO a une remarque, l'équipe retourne sur l'item précédent :
+<img src="resources/Burn down chart with PO remark.PNG" alt="Burn Down Chart scheme" />
 
-Les 5 valeurs de scrum. Acceptance criteria, the definition of Done.
