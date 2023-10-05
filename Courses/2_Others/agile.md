@@ -34,7 +34,7 @@ Permet d'éviter l'effet papillon (un petit problème peut en cacher un bien plu
 
 ### Chef de projet ?
 Lors d'un projet agile, le rôle de chef de projet est décomposé en deux sous-rôles :
-- **Product Owner** : le propriétaire du produit. S'occuper du besoin.
+- **Product Owner** : le propriétaire du produit. S'occuper du besoin. S'occupe de la valeur, du Product Backlog et des items (PBI). Refuser ou valider les livrables
 - **Scrum Master** : aussi appelé Process Owner. S'occuper du processus.
 
 Les **développeurs** (troisième rôle) ne sont gérés par aucun "chef". Il n'y a pas de chef en projet agile, à part un "chef produit" et un "chef process". Les développeurs peuvent être jusqu'à 10. Développeur est un rôle qui comprend les concepteurs, les devs, les architectes, les équipes, etc. 
@@ -53,6 +53,8 @@ Phases : Analyse => Conception => Dev => Test+Recettage <br />
 Sprint : sprint 1 => sprint 2 => sprint 3
 
 La **durée d'un sprint** est d'une à quatre semaines. La durée du sprint varie en fonction du projet et de l'objectif. Une fois la durée d'un sprint définie, elle reste la même pour tous les autres sprints.
+
+Les diverses réunions sont inclues dans la durée d'un sprint. Lorsqu'un sprint se termine, un autre commence directement.
 
 ### Les facteurs de qualité
 
@@ -96,9 +98,9 @@ Scrum (mêlée) est un **framework** qui se base sur l'agilité. Il **ajoute un 
 Notion de **Timebox** : Chaque tâche possède son propre temps assigné et il n'est pas possible de dépasser cette limite.
 
 **Les quatre types de réunion lors d'un sprint** :
-- **Réunion d'initialisation** : le sprint planning
+- **Sprint planning** / Réunion d'initialisation : le sprint planning. Réalisée en début d'un sprint. Aussi appelé "événement" ou "ceremony". Dure maximum 8h, soit 2h par semaines de sprint. Définir l'objectif du sprint.
 - **Daily Scrum** (ou Stand-up meeting): réunion quotidienne, durée max : 15min. Dev uniquement. Le Scrum Master peut y assister mais il ne doit pas participer (sauf pour faire respecter le time box).
-- 
+- **Sprint review** (toute l'équipe + parties prenantes, 1h par semaine) et **sprint retrospective** (PO, Scrum Master et devs, 45min par semaine) : Ces deux réunions s'enchaînent. Une réunion pour discuter du produit et une seconde pour discuter du process.
 
 Scrum est un process empirique, il se base sur l'expérience.
 
@@ -141,10 +143,25 @@ Des PBI sont choisis en fonction de leur priorité et durée, ils sont ensuite d
 
 **Le cône d'incertitude :** Au début d'un projet, l'incertitude est à 100%. Plus nous progressons dans un projet et plus l'incertitude diminue par l'ajout de feature et le déroulement des sprints. 
 
+
 ### 3 Piliers de SCRUM
 - **Transparence** : Être transparent, partager les informations de manière claire et correcte. Rendre visibles les problèmes
 - **Inspection** : Vérifier. Une fois les problèmes visibles, il faut les inspec­ter. 
 - **Adaptation** : Grâce à cette inspec­tion, on pourra alors s’adap­ter grâce à des actions visant à amélio­rer la situa­tion.
+
+
+### 5 Valeurs de Scrum
+- **Focus** : Être focalisé sur l'objectif, sur le sprint en cours, le projet, le scope. Ne surtout pas être Out of Scope.
+- **Ouverture** : Être ouvert aux autres, aux changements, aux nouvelles idées ou suggestions. Entraide.
+- **Respect** : Respecter le périmètre de chacun, les autres, les priorités, les deadlines, les TimeBox, le produit, le projet, les parties prenantes, le process, etc. 
+- **Courage** : Fast fail / Safe fail. Avoir le courage de se tromper, d'interagir régulièrement avec le client, accepter les nouvelles idées, accepter le changement, les responsabilités, quitter sa zone de confort.
+- **Engagement** : Envers l'équipe, envers le produit, envers la société/entreprise à laquelle nous appartenons.
+
+**5 Critères de l'équipe :** Auto-organisés, multidisciplinaire, pas de titres, pas de sous-équipes et maximum 10.
+
+
+
+
 
 
 
