@@ -48,7 +48,7 @@ Pour délivrer un feedback, il faut quelque chose de mesurable. Il faut un incr�
 Le **but d'un sprint** est de fonctionner par itération, tout en récoltant des feedbacks à la fin de celui-ci. 
 
 Il faut définir un objectif clair, on procède par sprint plutôt que par phases. Un sprint est constitué de diverses parties des "phases" d'un projet normal.
-<img src="resources/phases_vs_sprints.PNG" alt="phases vs sprints scheme"/>
+<img src="resources/phases_vs_sprints.PNG" alt="phases vs sprints schema"/>
 Phases : Analyse => Conception => Dev => Test+Recettage <br />
 Sprint : sprint 1 => sprint 2 => sprint 3
 
@@ -59,7 +59,7 @@ Les diverses réunions sont inclues dans la durée d'un sprint. Lorsqu'un sprint
 ### Les facteurs de qualité
 
 Lors d'un projet, 3 facteurs importants peuvent affecter la qualité.
-<img src="resources/triangle of quality.PNG" alt="triangle of quality scheme"/>
+<img src="resources/triangle of quality.PNG" alt="triangle of quality schema"/>
 Le dérèglement de n'importe lequel des 3 facteurs, sans adapter les autres, va dégrader la qualité :
 - Ajouter du contenu sans augmenter le coût ou les délais va créer une situation où nous n'avons ni le temps ni l'argent de le faire, la qualité se réduit.
 - Diminuer le budget, le coût va faire que nous n'aurons pas les moyens pour réaliser le contenu demandé dans le délai imparti
@@ -76,13 +76,13 @@ Verouiller le scope : Uniquement en management classique, après le cahier des c
 
 ### Les 4 valeurs Agile
 
-<img src="resources/4_valeurs_agile.PNG" alt="4 valeurs Agile scheme"/>
+<img src="resources/4_valeurs_agile.PNG" alt="4 valeurs Agile schema"/>
 En managment de projet classique, nous utilisons les éléments en rouge. <br />
 En approche Agile, les 8 éléments sont à prendre en compte.
 
 ### Les 12 principes Agile
 
-<img src="resources/12_principles_Agile.PNG" alt="12 Agile principle scheme" />
+<img src="resources/12_principles_Agile.PNG" alt="12 Agile principle schema" />
 
 Celui-ci est également composé de 3 "P":
 - **People** : Personnes motivées et communication efficace en face à face.
@@ -106,7 +106,7 @@ Scrum est un process empirique, il se base sur l'expérience.
 
 ### Roue de Deming
 Lrincipe de l'amélioration continue / PDCA est essentiel en Agile :
-<img src="resources/PDCA.jpg" alt="PDCA scheme" />
+<img src="resources/PDCA.jpg" alt="PDCA schema" />
 
 ### Valeur et priorité
 **Qu'est-ce que la valeur ?** <br />
@@ -137,7 +137,7 @@ Des PBI sont choisis en fonction de leur priorité et durée, ils sont ensuite d
 **Partie prenante** : Personne physique ou morale (une société, l'état, une législation ou une instance gouvernementale/continentale (ex: RGPD)). Qu'elle soit interne ou externe et qui peut influencer le projet, de près ou de loin, de manière positive ou négative.
 
 **PESTEL** (Politique, Économique, Socioculturel, Technologique, Écologique, Légal) : Facteurs externes qui peuvent influencer un projet.
-<img src="resources/analyse-pestel.PNG" alt="PESTEL analyse scheme" />
+<img src="resources/analyse-pestel.PNG" alt="PESTEL analyse schema" />
 
 **Cancel the sprint** : Lorsqu'un Sprint devient de la NVA à cause d'un facteur extérieur. Extrêmement rare. Il est alors possible d'annuler un Sprint. Action uniquement réalisable par un PO.
 
@@ -171,8 +171,29 @@ Ce document fait partie du process, ce sont aux développeurs de définir ce qu'
 ### Burn Down Chart
 
 Avec la Burn Down Chart, on peut remarquer l'évolution de la complétion des PBI. La courbe n'est pas en pente puisqu'on regarde uniquement lorsque l'item est DONE. S'il n'est pas Done, alors on continue.
-<img src="resources/Burn Down Chart.PNG" alt="Burn Down Chart scheme" />
+<img src="resources/Burn Down Chart.PNG" alt="Burn Down Chart schema" />
 
 Si le PO a une remarque, l'équipe retourne sur l'item précédent :
-<img src="resources/Burn down chart with PO remark.PNG" alt="Burn Down Chart scheme" />
+<img src="resources/Burn down chart with PO remark.PNG" alt="Burn Down Chart schema" />
 
+## Résumé
+
+**3 rôles** : Product Owner, Scrum master et Dev.
+
+**3 artéfacts** : Product Backlog, Sprint backlog, et Product Increment.
+
+**4 réunions** : Sprint planning, Daily scrum, sprint review et sprint retrospective.
+
+**Rôles du Product Owner** : Gère le produit. Maximise la valeur ajoutée. SPOC (Single Point of Contact) avec le client. Crée et maintient le Product Backlog.
+
+**Rôles des développeurs** : auto-organisés, pas de sous-équipes, max 10, pas de titres et multifonctions.
+
+**Rôles du Scrum Master** : Gère le process. Facilitateur, élimine les obstacles. Coach et anime.
+
+**PDCA :**
+- **Plan** : Sprint planning, en se basant sur les PBI.
+- **Do** : Commence après le sprint planning, se termine lorsque nous rendons l'incrément livrable.
+- **Check** : Sprint review + sprint retro. Ce qui a fonctionné, ce qui a échoué, etc.
+- **Act** : Agir sur le Product Backlog en changeant le PB, notamment les priorités, etc.
+
+<img src="resources/resume-agile.PNG" alt="agile resume schema" />
