@@ -129,3 +129,24 @@ Outils pour **réaliser un PB** : possible d'utiliser **Trello** pour créer des
 Un exemple classique de Sprint Backlog pourrait être un tableau Kanban : **Décomposer les tâches d'un ou plusieurs PBI en plusieurs statuts de complétion** (ex: TO-DO, On-going and Done).
 
 Des PBI sont choisis en fonction de leur priorité et durée, ils sont ensuite décomposés en tâches. Les PBI à travailler sur la durée du sprint sont déterminés par les développeurs et les tâches sont également définies par eux.
+
+### Définitions
+
+**Partie prenante** : Personne physique ou morale (une société, l'état, une législation ou une instance gouvernementale/continentale (ex: RGPD)). Qu'elle soit interne ou externe et qui peut influencer le projet, de près ou de loin, de manière positive ou négative.
+
+**PESTEL** (Politique, Économique, Socioculturel, Technologique, Écologique, Légal) : Facteurs externes qui peuvent influencer un projet.
+<img src="resources/analyse-pestel.PNG" alt="PESTEL analyse scheme" />
+
+**Cancel the sprint** : Lorsqu'un Sprint devient de la NVA à cause d'un facteur extérieur. Extrêmement rare. Il est alors possible d'annuler un Sprint. Action uniquement réalisable par un PO.
+
+**Le cône d'incertitude :** Au début d'un projet, l'incertitude est à 100%. Plus nous progressons dans un projet et plus l'incertitude diminue par l'ajout de feature et le déroulement des sprints. 
+
+### 3 Piliers de SCRUM
+- **Transparence** : Être transparent, partager les informations de manière claire et correcte. Rendre visibles les problèmes
+- **Inspection** : Vérifier. Une fois les problèmes visibles, il faut les inspec­ter. 
+- **Adaptation** : Grâce à cette inspec­tion, on pourra alors s’adap­ter grâce à des actions visant à amélio­rer la situa­tion.
+
+
+
+
+Les 5 valeurs de scrum. Acceptance criteria, the definition of Done.
