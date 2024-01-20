@@ -17,6 +17,9 @@ https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master)
 * [**Others**](/Courses/2_Others/)
     - Vocabulary <!-- [Vocabulary](/Courses/2_Others/vocabulary.md) -->
     - [Microsoft Azure](/Courses/2_Others/microsoft_azure.md)
+    - [Agile](/Courses/2_Others/agile.md)
+    - [Azure Devops](/Courses/2_Others/azure_devops.md)
+    - [Power Platform](/Courses/2_Others/office365.md)
 * [**.NET and Databases**](/Courses/3_Dotnet_&_BDD/)
     - Dotnet versions <!-- [Dotnet versions](/Courses/3_Dotnet_&_BDD/dotnet_versions.md) -->
 * [**Loop and conditions**](/Courses/4_Loop_&_Conditions/)
