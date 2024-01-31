@@ -62,6 +62,20 @@ const paragraphs = (
     <p>Other things</p>
 );
 ```
+The first opening tag and the last opening tag must belong to the same JSX element.
+
+As an other solution, you could use **React Fragments**.
+```js
+render() {
+  return (
+    <React.Fragment>
+      <ChildA />
+      <ChildB />
+      <ChildC />
+    </React.Fragment>
+  );
+}
+```
 
 ### Useful links
 - [JSX Cheatsheet](https://www.codecademy.com/learn/react-101/modules/react-101-jsx-u/cheatsheet)
