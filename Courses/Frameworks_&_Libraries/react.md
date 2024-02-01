@@ -44,8 +44,10 @@ You can nest JSX elements:
 <p>{ Math.random() }</p>;
 ```
 
-**3) Warning** (unique outermost element):
 
+### Warnings
+
+#### 1) Unique outermost element
 A JSX element can only have one outermost element. You can do that:
 ```jsx
 const paragraphs = (
@@ -76,6 +78,24 @@ render() {
   );
 }
 ```
+
+#### 2) Altered attributes
+The class attribute isn't the same in JSX:
+<br />Html version ->
+```html
+<p class="small">Nevermind</p>
+```
+JSX version -> 
+```jsx
+<p className="small">Nevermind</p>
+```
+
+The for attribute isn't the same either:
+From `for` to `htmlFor`
+
+#### 3) Self closing tag
+**In html**, you can write `<br />` and `<br>`. <br>
+**In JSX**, you can write `<br />` but you **cannot** write `<br>`! 
 
 ### Useful links
 - [JSX Cheatsheet](https://www.codecademy.com/learn/react-101/modules/react-101-jsx-u/cheatsheet)
