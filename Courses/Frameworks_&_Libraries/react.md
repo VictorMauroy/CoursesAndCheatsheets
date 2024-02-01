@@ -1,7 +1,11 @@
 # Learning React
 
 **Content:**
-- [**JSX with React**](#jsx)
+* [**JSX with React**](#jsx)
+  - [What is JSX](#what-is-jsx)
+  - [Tips](#tips)
+  - [Warnings](#warnings)
+  - [Useful links](#useful-links)
 
 ## JSX
 
@@ -40,6 +44,7 @@ You can nest JSX elements:
 ```
 
 **2) You can use javascript inside JSX code:**
+<br> By using opening an closing curly braces.
 ```html
 <p>{ Math.random() }</p>;
 ```
