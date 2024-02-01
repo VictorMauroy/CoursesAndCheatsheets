@@ -9,7 +9,7 @@
 
 ## JSX
 
-When working with React, you'll need to use a JSX syntax whenever you want to customize what you want to see. 
+When working with React, you'll need to use a JSX syntax whenever you want to customize what you want to see.
 
 Here is an example:
 ```jsx
@@ -49,6 +49,36 @@ You can nest JSX elements:
 <p>{ Math.random() }</p>;
 ```
 
+**3) Set attribute with javascript variables**
+```js
+let imgUrl = "./resources/thing.png"
+const thingImg = <img src={imgUrl} />
+```
+
+**4) Loops and conditions**
+You cannot insert `if` or `else` statements inside JSX code. You must do it in the javascript part of your code. Example:
+- this **will not work**:
+```jsx
+const nb = Math.random();
+let thingImg = (
+  <img src={
+    if(nb < 0.5) {
+      /* Some url */
+    } else {
+      /* Another url */
+    }
+  } />
+)
+```
+- this **will work**:
+```js
+const coinFace = Math.random();
+if(nb < 0.5) {
+  <img src={/* Some url */} />
+} else {
+  <img src={/* another url */} />
+}
+```
 
 ### Warnings
 
@@ -105,3 +135,4 @@ From `for` to `htmlFor`
 ### Useful links
 - [JSX Cheatsheet](https://www.codecademy.com/learn/react-101/modules/react-101-jsx-u/cheatsheet)
 - [JSX with React Syntax](https://www.codecademy.com/resources/docs/react/jsx)
+- [Common events and components in React](https://react.dev/reference/react-dom/components/common#)
