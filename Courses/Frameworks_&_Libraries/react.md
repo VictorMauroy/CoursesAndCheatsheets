@@ -91,7 +91,7 @@ You can also use the **&& operator** for quick condition check:
 <h1>{ studentNote > 15 && "Good work!" }</h1>
 ```
 
-**5) Arrays and lists**
+**5) Arrays**
 
 A few examples about how to use arrays and lists in JSX to make some interesting things:
 ```jsx
@@ -120,6 +120,18 @@ const liArray = colors.map(color => <li>{color}</li>);
 
 <ul>{liArray}</ul>
 ```
+
+**6) Keep array element state and order in memory**
+
+To do that, you will need a `key` attribute inside your jsx element.
+```jsx 
+const peopleList = people.map((person, i) => (
+  <li key={'person_' + i}>{person}</li>
+));
+
+root.render(<ul>{peopleList}</ul>);
+```
+Is is useful to avoid having or list items shuffled or loose a particuliar state (like a checked box).
 
 
 ### Warnings
