@@ -90,6 +90,7 @@ You can also use the **&& operator** for quick condition check:
 ```jsx
 <h1>{ studentNote > 15 && "Good work!" }</h1>
 ```
+*Note: If the left operand equals true, then the right operand is returned. If the first one equals false, "false" will be returned.*
 
 **5) Arrays**
 
