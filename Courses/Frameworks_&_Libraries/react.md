@@ -186,6 +186,58 @@ From `for` to `htmlFor`
 **In html**, you can write `<br />` and `<br>`. <br>
 **In JSX**, you can write `<br />` but you **cannot** write `<br>`! 
 
+### Alternative to JSX in React
+In React, there is also a lot of methods to not use JSX. Sometimes, it can be much easier with those methods.
+For instance, you can do that **without JSX**:
+```js
+import { createElement } from 'react';
+
+function Greeting({ name }) {
+  return createElement(
+    'h1',
+    { className: 'greeting' },
+    'Hello ',
+    createElement('i', null, name),
+    '. Welcome!'
+  );
+
+  //Which is the same as the following:
+  <h1>
+    Hello <i>{name}</i>. Welcome!
+  </h1>
+}
+
+export default function App() {
+  return createElement(
+    Greeting,
+    { name: 'Taylor' }
+  );
+}
+//Which will create that:
+<Greeting name="Taylor />
+```
+
+Same result but **with JSX**:
+```jsx
+function Greeting({ name }) {
+  return (
+    <h1 className="greeting">
+      Hello <i>{name}</i>. Welcome!
+    </h1>
+  );
+}
+
+export default function App() {
+  return <Greeting name="Taylor" />;
+}
+```
+
+Check that link for more informations about [createElement](https://react.dev/reference/react/createElement). The above examples are taken from that link.
+
+**What is the difference ?**
+> We would use React.createElement() instead of JSX when we do not want to set up compilation for our project, which the use of JSX requires!
+
+
 ### Useful links
 - [JSX Cheatsheet](https://www.codecademy.com/learn/react-101/modules/react-101-jsx-u/cheatsheet)
 - [JSX with React Syntax](https://www.codecademy.com/resources/docs/react/jsx)
