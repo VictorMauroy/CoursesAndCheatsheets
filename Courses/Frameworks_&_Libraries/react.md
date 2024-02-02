@@ -56,6 +56,7 @@ const thingImg = <img src={imgUrl} />
 ```
 
 **4) Loops and conditions**
+
 You cannot insert `if` or `else` statements inside JSX code. You must do it in the javascript part of your code. Example:
 - this **will not work**:
 ```jsx
@@ -79,6 +80,47 @@ if(nb < 0.5) {
   <img src={/* another url */} />
 }
 ```
+
+You can use **ternary operator** in JSX:
+```jsx
+<h1>{ !daytime ? "Have a nice day" : "Good night" }</h1>
+```
+
+You can also use the **&& operator** for quick condition check:
+```jsx
+<h1>{ studentNote > 15 && "Good work!" }</h1>
+```
+
+**5) Arrays and lists**
+
+A few examples about how to use arrays and lists in JSX to make some interesting things:
+```jsx
+const liArray = [
+  <li>item 1</li>, 
+  <li>item 2</li>, 
+  <li>item 3</li>
+];
+
+<ul>{liArray}</ul>
+
+// is equal to do:
+
+<ul>
+  <li>item 1</li>
+  <li>item 2</li>
+  <li>item 3</li>
+</ul>
+```
+
+You can also do that:
+```jsx
+const colors = ['Red', 'Blue', 'Grey'];
+
+const liArray = colors.map(color => <li>{color}</li>);
+
+<ul>{liArray}</ul>
+```
+
 
 ### Warnings
 
