@@ -243,3 +243,28 @@ Check that link for more informations about [createElement](https://react.dev/re
 - [JSX Cheatsheet](https://www.codecademy.com/learn/react-101/modules/react-101-jsx-u/cheatsheet)
 - [JSX with React Syntax](https://www.codecademy.com/resources/docs/react/jsx)
 - [Common events and components in React](https://react.dev/reference/react-dom/components/common#)
+
+
+## Starting with React
+
+### Imports
+In order to use the React.js library, **you need to import a few things**:
+- `import React from 'react';` will create a new object named `React` which will contains a lot of methods. To summerize, this is the main import that you will use.
+- `import ReactDom from 'react-dom/client';` allows to interact with the DOM. The React object imported above cannot do it.
+
+### React Components
+**What are they ?** <br>
+> React component is a small, reusable chunk of code that is responsible for one job, which often involves rendering HTML and re-rendering it whenever some data changes. *Codecademy*
+
+> It’s useful to think of components as smaller pieces of our interface. Combined, they are the building blocks that make up a React application. In a website, we can create a component for the search bar, another component for the navigation bar, and another component for the dashboard content itself. *Codecademy*
+
+**Example**
+```jsx
+import React from 'react';
+
+function MyComponent() {
+  return <h1>Hello, I'm a functional React Component!</h1>;
+}
+
+export default MyComponent;
+```
