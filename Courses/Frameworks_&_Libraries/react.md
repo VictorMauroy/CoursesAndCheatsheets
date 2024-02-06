@@ -252,6 +252,14 @@ In order to use the React.js library, **you need to import a few things**:
 - `import React from 'react';` will create a new object named `React` which will contains a lot of methods. To summerize, this is the main import that you will use.
 - `import ReactDom from 'react-dom/client';` allows to interact with the DOM. The React object imported above cannot do it.
 
+### Important files
+React has **two core files**:
+- `App.js` is the top-level of your application.
+- `index.js` is the entry point.
+
+For instance, you will **define some Components in App.js** and you will then need to **import them into index.js in order to render them**.
+
+
 ### React Components
 **What are they ?** <br>
 > React component is a small, reusable chunk of code that is responsible for one job, which often involves rendering HTML and re-rendering it whenever some data changes. *Codecademy*
@@ -268,3 +276,37 @@ function MyComponent() {
 
 export default MyComponent;
 ```
+
+**Warnings**
+- When declaring a new React Component, you should **name your function by using PascalCase**. If you don't, React will start looking for build-in components and return an error.
+
+### Exporting and importing Components
+
+> App.js
+```jsx
+import React from 'react';
+
+function MyComponent()
+{
+  return <h1>Wanna make a component ?</h1>;
+}
+
+export default MyComponent;
+```
+
+> index.js
+```jsx
+import React from 'react';
+import ReactDom from 'react-dom/client';
+
+import MyComponent from './App';
+
+<MyComponent />
+
+// Or you can do the following if you want to insert other components in it
+
+<MyComponent>
+  <AnotherComponent />
+</MyComponent>
+```
+
