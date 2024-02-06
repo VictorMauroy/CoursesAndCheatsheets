@@ -280,7 +280,7 @@ export default MyComponent;
 **Warnings**
 - When declaring a new React Component, you should **name your function by using PascalCase**. If you don't, React will start looking for build-in components and return an error.
 
-### Exporting and importing Components
+### How to use Components
 
 > App.js
 ```jsx
@@ -310,3 +310,25 @@ import MyComponent from './App';
 </MyComponent>
 ```
 
+That is how you can use your component. The thing is that you aren't rendering it in the browser yet. You will need to add a few lines inside `index.js`:
+
+> index.js
+```jsx
+ReactDOM.createRoot(document.getElementById('app'));
+```
+- `document.getElementById('app')` returns a DOM element from **index.html**.
+- `createRoot()` receives the DOM element as the first argument and creates a root for it.
+- `createRoot()` returns a reference to the root container on which you can call methods like `.render()`.
+
+After the root is created, all that’s left to do is call the .render() method on the returned root and display the React component like so:
+
+```jsx
+ReactDOM.createRoot(document.getElementById('app'))
+  .render(<MyComponent />);
+```
+
+From here, React will display `<MyComponent />` in the root and make it appear on the screen.
+
+In an application fully built with React, you will only need to do this once. Once this is set up, React will manage the DOM of your application, and any updates to the UI is taken care of efficiently. Adding more components should take place in your top-level `App.js` file.
+
+*(The above paragraphs where taken from Codecademy.)*
