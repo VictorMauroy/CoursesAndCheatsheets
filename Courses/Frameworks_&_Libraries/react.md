@@ -332,3 +332,14 @@ From here, React will display `<MyComponent />` in the root and make it appear o
 In an application fully built with React, you will only need to do this once. Once this is set up, React will manage the DOM of your application, and any updates to the UI is taken care of efficiently. Adding more components should take place in your top-level `App.js` file.
 
 *(The above paragraphs where taken from Codecademy.)*
+
+**Render multiple components**
+```jsx
+ReactDOM.createRoot(document.getElementById('app'))
+  .render(
+    <React.Fragment>
+      <MyComponent /> 
+      <SayHello />
+    </React.Fragment>
+  );
+```
