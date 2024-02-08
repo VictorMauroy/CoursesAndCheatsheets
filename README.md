@@ -1,6 +1,6 @@
 # C# Courses
 
-**Objective:** To be able to quickly find informations about many methods, tips or concepts around C# Development. 
+**Objective:** To be able to quickly find informations about many methods, tips or concepts around C# Development.
 
 ## **Useful links:**
 - [**Philippe's (one of my teachers) C# course on Miro**](https://miro.com/app/board/uXjVMxGe2Cg=/)
@@ -44,7 +44,9 @@ https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master)
     - Tasks <!-- [Tasks](/Courses/9_Thread_&_Tasks/tasks.md) -->
 * [**Release**](/Courses/Release_Tutorial/)
     - Semantic versioning <!-- [Semantic versioning](/Courses/Release_Tutorial/semantic_versioning.md) -->
+* [**Frameworks & Libraries**](/Courses/Frameworks_&_Libraries/)
+    - [React](/Courses/Frameworks_&_Libraries/react.md)
+    - [Make an API with ASP.NET](/Courses/Frameworks_&_Libraries/api.md)
 
 **Note:** 
 - This is a non-exhaustive list of lessons and concepts. You can check all the work currently on-going or to do on the Trello link of that projet, at the [useful links section](#useful-links).
-- It was supposed to be a common project between a few peoples but I am alone xD
