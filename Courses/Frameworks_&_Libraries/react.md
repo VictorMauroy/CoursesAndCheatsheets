@@ -367,3 +367,14 @@ function ShowCat() {
 }
 ```
 
+### Advanced Components tips
+
+**Add Event Handler**
+```jsx
+function MyComponent(){
+  function handleHover() {
+    alert('You should stop hovering this!');
+  }
+  return <div onHover={handleHover}></div>;
+}
+```
