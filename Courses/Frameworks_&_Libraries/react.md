@@ -343,3 +343,27 @@ ReactDOM.createRoot(document.getElementById('app'))
     </React.Fragment>
   );
 ```
+
+**Using variables into Components**
+```jsx
+const cat = {
+  catName : 'Kitty',
+  src: 'https://cat.fr/cat-img',
+  alt: 'A cat picture',
+  width: '200px'
+};
+
+function ShowCat() {
+  return (
+    <div>
+      <h3> His name is {cat.catName} </h3>
+      <img 
+        src= {cat.src}
+        alt= {cat.alt}
+        width= {cat.width}
+      />
+    </div>
+  );
+}
+```
+
