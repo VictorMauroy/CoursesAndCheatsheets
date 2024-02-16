@@ -449,3 +449,28 @@ function Button({displayText}) {
 }
 ```
 Where `displayText` is a property name that could have been contained inside props.
+
+#### **Event handler as prop**
+> DontClick.js
+```jsx
+function DontClick () {
+
+  //This is a function that will works as an event
+  function cryOnClick() {
+    alert("I said to no click :(");
+  }
+
+  return <MyButton cryOnClick={cryOnClick} />;
+}
+```
+> MyButton.js
+```jsx
+function MyButton(props) {
+  return (
+    <button onClick={props.cryOnClick}>
+      Don't click me! It hurts.
+    </button>
+  );
+}
+```
+Do not forget to add `props` inside the function paranthesis.
