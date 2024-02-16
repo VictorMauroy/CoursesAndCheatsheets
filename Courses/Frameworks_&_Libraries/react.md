@@ -381,20 +381,31 @@ function MyComponent(){
 
 #### **Define props** (alias properties)
 
-Let's start with a basic example:
+Let's see a good example:
 
 > People.js
 ```jsx
 import React from 'react';
 
 function ShowPeople(props) {
-  return (
-    <div>
-      <h2>Hello {props.name}!</h2>
-      <p>What do you want to do, today ?</p>
-      ...
-    </div>
-  );
+  if(props.isAdmin == true) {
+    return (
+      <div>
+        <h2 id={props.titleid}> Hello ADMIN {props.name}!</h2>
+        <p>What do you want to do today, boss ?</p>
+        ...
+      </div>
+    );
+  } else {
+    return (
+      <div>
+        <h2 id={props.titleid}> Hello {props.name}!</h2>
+        <p>What do you want to do, today ?</p>
+        ...
+      </div>
+    );
+  }
+  
 }
 
 export default ShowPeople;
@@ -406,7 +417,7 @@ import React from 'react';
 import ShowPeople from './ShowPeople';
 
 function App() {
-  return <ShowPeople name="John" />
+  return <ShowPeople name="John" titleid="redTitle" isAdmin={false}/>
 }
 
 export default App;
@@ -427,3 +438,14 @@ You can also send more complexe objects, such as arrays or entities:
 ```jsx
 <ShowPeoples names={["John", "Louis", "Lisa"]} />
 ```
+
+Note that the values that aren't of the type `string` must be passed between curly braces.
+
+Alternatively, since `props` is an object, you can also use destructuring syntax like so:
+
+```jsx
+function Button({displayText}) {
+  return <button>{displayText}</button>;
+}
+```
+Where `displayText` is a property name that could have been contained inside props.
