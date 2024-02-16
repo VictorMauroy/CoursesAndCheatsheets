@@ -261,12 +261,12 @@ For instance, you will **define some Components in App.js** and you will then ne
 
 
 ### React Components
-**What are they ?** <br>
+#### **What are they ?** <br>
 > React component is a small, reusable chunk of code that is responsible for one job, which often involves rendering HTML and re-rendering it whenever some data changes. *Codecademy*
 
 > It’s useful to think of components as smaller pieces of our interface. Combined, they are the building blocks that make up a React application. In a website, we can create a component for the search bar, another component for the navigation bar, and another component for the dashboard content itself. *Codecademy*
 
-**Example**
+#### **Example**
 ```jsx
 import React from 'react';
 
@@ -277,7 +277,7 @@ function MyComponent() {
 export default MyComponent;
 ```
 
-**Warnings**
+#### **Warnings**
 - When declaring a new React Component, you should **name your function by using PascalCase**. If you don't, React will start looking for build-in components and return an error.
 
 ### How to use Components
@@ -333,7 +333,7 @@ In an application fully built with React, you will only need to do this once. On
 
 *(The above paragraphs where taken from Codecademy.)*
 
-**Render multiple components**
+#### **Render multiple components**
 ```jsx
 ReactDOM.createRoot(document.getElementById('app'))
   .render(
@@ -344,7 +344,7 @@ ReactDOM.createRoot(document.getElementById('app'))
   );
 ```
 
-**Using variables into Components**
+#### **Using variables into Components**
 ```jsx
 const cat = {
   catName : 'Kitty',
@@ -369,7 +369,7 @@ function ShowCat() {
 
 ### Advanced Components tips
 
-**Add Event Handler**
+#### **Add Event Handler**
 ```jsx
 function MyComponent(){
   function handleHover() {
@@ -378,3 +378,39 @@ function MyComponent(){
   return <div onHover={handleHover}></div>;
 }
 ```
+
+#### **Define props** (alias properties)
+
+Let's start with a basic example:
+
+> People.js
+```jsx
+import React from 'react';
+
+function ShowPeople(props) {
+  return (
+    <div>
+      <h2>Hello {props.name}!</h2>
+      <p>What do you want to do, today ?</p>
+      ...
+    </div>
+  );
+}
+
+export default ShowPeople;
+```
+
+> App.js
+```jsx
+import React from 'react';
+import ShowPeople from './ShowPeople';
+
+function App() {
+  return <ShowPeople name="John" />
+}
+
+export default App;
+```
+
+This is how you can send informations from one component to another. It helps to customize them.
+
