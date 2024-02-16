@@ -414,3 +414,16 @@ export default App;
 
 This is how you can send informations from one component to another. It helps to customize them.
 
+**Adding properties to components seems like adding attributes to an html tag.**
+
+The following code: `<ShowPeople name="John" />` will call `ShowPeople` and send it an object which looks like:
+```js
+{ 
+  "name" = "John"
+}
+```
+
+You can also send more complexe objects, such as arrays or entities:
+```jsx
+<ShowPeoples names={["John", "Louis", "Lisa"]} />
+```
