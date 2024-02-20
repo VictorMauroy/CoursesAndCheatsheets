@@ -474,3 +474,51 @@ function MyButton(props) {
 }
 ```
 Do not forget to add `props` inside the function paranthesis.
+
+#### Choosing children elements position
+When working with components, you can choose to add content between their opening `<MyButton>` and closing tags `<MyButton/>`. The thing is that sometimes, you will want to choose where you want it to render inside your component:
+
+> List.js
+```jsx
+import React from 'react';
+
+function List(props) {
+  let titleText = `Favorite ${props.type}`;
+  if (props.children instanceof Array) {
+    titleText += 's';
+  }
+  return (
+    <div>
+      <h1>{titleText}</h1>
+      <ul>{props.children}</ul>
+    </div>
+  );
+}
+
+export default List;
+```
+
+> App.js
+```jsx
+import React from 'react';
+import List from './List';
+
+function App() {
+  return (
+    <div>
+      <List type='Living Musician'>
+        <li>Sachiko M</li>
+        <li>Harvey Sid Fisher</li>
+      </List>
+      <List type='Living Cat Musician'>
+        <li>Nora the Piano Cat</li>
+      </List>
+    </div>
+  );
+}
+
+export default App;
+```
+
+The code `props.children` allows you to everything that you added between your opening and closing tag. <br>
+When there is only one element, it will be returned directly. Where there is more than one, you will get an array (allowing you to threat them individually).
