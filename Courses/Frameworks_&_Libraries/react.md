@@ -456,18 +456,18 @@ Where `displayText` is a property name that could have been contained inside pro
 function DontClick () {
 
   //This is a function that will works as an event
-  function cryOnClick() {
+  function handleClick() {
     alert("I said to no click :(");
   }
 
-  return <MyButton cryOnClick={cryOnClick} />;
+  return <MyButton onClick={handleClick} />;
 }
 ```
 > MyButton.js
 ```jsx
 function MyButton(props) {
   return (
-    <button onClick={props.cryOnClick}>
+    <button onClick={props.onClick}>
       Don't click me! It hurts.
     </button>
   );
