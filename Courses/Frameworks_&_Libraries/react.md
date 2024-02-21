@@ -6,6 +6,16 @@
   - [Tips](#tips)
   - [Warnings](#warnings)
   - [Useful links](#useful-links)
+* [**Starting with React**](#starting-with-react)
+  - [Imports](#imports)
+  - [Important files](#important-files)
+* [**React Components**](#react-components)
+  - [What are they ?](#what-are-they)
+  - [Example](#example)
+  - [Warnings](#warnings)
+  - [How to use Components](#how-to-use-components)
+  - [Advanced Components tips](#advanced-components-tips)
+
 
 ## JSX
 
@@ -260,13 +270,13 @@ React has **two core files**:
 For instance, you will **define some Components in App.js** and you will then need to **import them into index.js in order to render them**.
 
 
-### React Components
-#### **What are they ?** <br>
+## React Components
+### **What are they ?** <br>
 > React component is a small, reusable chunk of code that is responsible for one job, which often involves rendering HTML and re-rendering it whenever some data changes. *Codecademy*
 
 > It’s useful to think of components as smaller pieces of our interface. Combined, they are the building blocks that make up a React application. In a website, we can create a component for the search bar, another component for the navigation bar, and another component for the dashboard content itself. *Codecademy*
 
-#### **Example**
+### **Example**
 ```jsx
 import React from 'react';
 
@@ -277,7 +287,7 @@ function MyComponent() {
 export default MyComponent;
 ```
 
-#### **Warnings**
+### **Warnings**
 - When declaring a new React Component, you should **name your function by using PascalCase**. If you don't, React will start looking for build-in components and return an error.
 
 ### How to use Components
