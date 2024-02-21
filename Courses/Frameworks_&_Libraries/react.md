@@ -522,3 +522,32 @@ export default App;
 
 The code `props.children` allows you to everything that you added between your opening and closing tag. <br>
 When there is only one element, it will be returned directly. Where there is more than one, you will get an array (allowing you to threat them individually).
+
+#### Setting default values for props
+There are three ways to set a default value for your properties:
+
+1) Adding `YourFunctionName.defaultProps`
+```jsx
+function Example(props) {
+  return <h1>{props.text}</h1>
+}
+
+Example.defaultProps = {
+  text: 'This is default text',
+};
+```
+
+2) Specify a default value **in the function definition**:
+```jsx
+function Example({text='This is default text'}) {
+   return <h1>{text}</h1>
+}
+```
+
+3) **Setting a constant for a specific value**:
+```jsx
+function Example(props) {
+  const {text = 'This is default text'} = props;
+  return <h1>{text}</h1>
+}
+```
