@@ -561,3 +561,9 @@ function Example(props) {
   return <h1>{text}</h1>
 }
 ```
+
+## Debugging React
+
+In case you need to debug your react app, I recommend checking that quick course : [React Developer Tools](https://www.codecademy.com/courses/react-101/informationals/ready-react-developer-tools) by Codecademy.
+
+It explains how to use a chrome extension called "React Developer Tools" which **add new tabs in the Chome DevTools** (Where you can see the DOM, javascript console, etc.). You will then be able to inspect the components of your react app and edit them in live (temporary). There is also a Profiler tab.
