@@ -136,11 +136,15 @@ const liArray = colors.map(color => <li>{color}</li>);
 
 To do that, you will need a `key` attribute inside your jsx element.
 ```jsx 
-const peopleList = people.map((person, i) => (
-  <li key={'person_' + i}>{person}</li>
-));
+const listItems = products.map(product =>
+  <li key={product.id}>
+    {product.title}
+  </li>
+);
 
-root.render(<ul>{peopleList}</ul>);
+return (
+  <ul>{listItems}</ul>
+);
 ```
 Is is useful to avoid having or list items shuffled or loose a particuliar state (like a checked box).
 
@@ -561,6 +565,35 @@ function Example(props) {
   return <h1>{text}</h1>
 }
 ```
+
+
+
+## States
+States are useful to **update informations on the screen** in response to a user interaction.
+
+### Why should we use states ?
+- **Local variables don’t persist between renders.** When React renders this component a second time, it renders it from scratch. It doesn’t consider any changes to the local variables.
+- **Changes to local variables won’t trigger renders.** React doesn’t realize it needs to render the component again with the new data. <br>
+
+=> States will allows you to **retain data between renders** and **re-render a component** by updating it with the state values.
+
+### How to use them ?
+First, you need to import useState: `import { useState } from 'react';`.
+
+To create a new state, you must declare it:
+```js
+const [index, setIndex] = useState(0);
+```
+
+`index` is the name of the state variable which retain the data between renders. <br>
+`setIndex` is the state setter function to update the variable and trigger React to render the component again. <br>
+`useState(0)` is how you give your state its base value. <br>
+
+Notes:
+- You can name your states as you wish but the convention is `[something, setSomething]`.
+- States can store many things, not only integers. You can set them with objects.
+
+
 
 ## Debugging React
 
