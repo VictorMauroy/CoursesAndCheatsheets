@@ -591,7 +591,26 @@ const [index, setIndex] = useState(0);
 
 Notes:
 - You can name your states as you wish but the convention is `[something, setSomething]`.
-- States can store many things, not only integers. You can set them with objects.
+- States can store many things, not only integers. You can set them with objects too.
+
+Here is a good example with an integer that increase when clicking a button:
+```js
+import { useState } from 'react';
+
+export default function MyButton() {
+  const [count, setCount] = useState(0);
+
+  function handleClick(){
+    setCount(count + 1);
+  }
+
+  return (
+    <button onClick={handleClick}>
+      You clicked that button {count} times.
+    </button>
+  );
+}
+```
 
 
 
