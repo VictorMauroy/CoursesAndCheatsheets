@@ -571,6 +571,8 @@ function Example(props) {
 ## States
 States are useful to **update informations on the screen** in response to a user interaction.
 
+[Official React documentation on states](https://react.dev/learn/state-a-components-memory)
+
 ### Why should we use states ?
 - **Local variables don’t persist between renders.** When React renders this component a second time, it renders it from scratch. It doesn’t consider any changes to the local variables.
 - **Changes to local variables won’t trigger renders.** React doesn’t realize it needs to render the component again with the new data. <br>
@@ -592,6 +594,7 @@ const [index, setIndex] = useState(0);
 Notes:
 - You can name your states as you wish but the convention is `[something, setSomething]`.
 - States can store many things, not only integers. You can set them with objects too.
+- State definition (like `const [count, setCount] = useState(0);`) should always be **defined at the top level of your function**. It cannot be nested in conditions.
 
 Here is a good example with an integer that increase when clicking a button:
 ```js
