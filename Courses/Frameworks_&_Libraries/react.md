@@ -615,6 +615,33 @@ export default function MyButton() {
 }
 ```
 
+### Objects as state
+As said before, you can store a lot of things inside a state, including objects. <br>
+
+```js
+const [cat, setCat] = useState(
+  name: "Kitty",
+  size: 10
+);
+```
+
+You will then be able to access its properties by doing:
+```js
+<p>My cat is named {cat.name} and is {cat.size}cm tall.</p>
+```
+
+The only thing you need to be cautious about is: how you will update your `cat` object:
+```js
+// You shouldn't do that
+cat.name = "Tiger";
+
+// But that
+setState({
+  name: "Tiger",
+  size: cat.size
+});
+```
+That is because it will not call the state setter function if you try to mutate your object and so, not re-render your component with the new values.
 
 
 ## Debugging React
