@@ -636,13 +636,42 @@ The only thing you need to be cautious about is: how you will update your `cat` 
 cat.name = "Tiger";
 
 // But that
-setState({
+setCat({
   name: "Tiger",
   size: cat.size
 });
 ```
 That is because it will not call the state setter function if you try to mutate your object and so, not re-render your component with the new values.
 
+Tip: if you have more that one property and don't want to copy every single one when changing one value, you can use the spread syntax:
+```jsx
+setCat({
+  name: "Tiger",
+  size: cat.size,
+  color: cat.color
+  age: 2
+});
+
+// Spread syntax
+setCat({
+  ...cat,
+  name: "Tiger"
+});
+```
+
+**Nested objects**: The same tip apply for nested objects, if you want to update them, you will have to do the following:
+```js
+setCat({
+  ...cat, // Copy other fields
+  master: { // but replace the master
+    ...cat.master, // with the same one
+    city: 'London' // but in London!
+  }
+});
+```
+When working with nested objects, it is recommended to use [Immer](https://github.com/immerjs/use-immer). Which allows to do: `updatePerson(draft => {
+  draft.artwork.city = 'Lagos';
+});`. It allows you to write your code as if you were writing a mutation but it will, in fact, fix everything behind you.
 
 ## Debugging React
 
