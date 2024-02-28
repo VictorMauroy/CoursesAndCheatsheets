@@ -673,6 +673,45 @@ When working with nested objects, it is recommended to use [Immer](https://githu
   draft.artwork.city = 'Lagos';
 });`. It allows you to write your code as if you were writing a mutation but it will, in fact, fix everything behind you.
 
+
+### Arrays as state
+Documentation: [Official react doc for arrays as state](https://react.dev/learn/updating-arrays-in-state)
+
+Remember that **you cannot mutate arrays**, you can't do `arr[i] = value` because it will not trigger the setter state function and the component won't update. <br>
+In order to make it works, you will need to **prefer some methods**. Usually, the ones that returns a new array.
+
+|    | Avoid | Prefer |
+|----|-------|--------|
+| **Add** | `push` `shift` | `concat` `[...arr]` spread syntax |
+| **Remove** | `pop` `shift` `splice` | `filter` `slice` |
+| **Replace** | `splice` `arr[i] = ...` | `map` |
+| **Sort** | `reverse` `sort` | Copy the array first |
+
+The principle is quite easy: while you can't update your previous array with a mutation, you need to **pass a new array to the setter function**.
+
+Note: `Immer` allows you to use both columns of the previous table.
+
+**Example:** <br>
+```js
+const [cats, setCats] = useState([]);
+...
+// Won't work
+cats.push({
+  name: "Minou",
+  size: 10
+});
+
+// Will work
+setCats({
+  ...cats,
+  {
+    name: "Minou",
+    size: 10
+  }
+});
+```
+
+
 ## Debugging React
 
 In case you need to debug your react app, I recommend checking that quick course : [React Developer Tools](https://www.codecademy.com/courses/react-101/informationals/ready-react-developer-tools) by Codecademy.
